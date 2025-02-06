@@ -11,12 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Incluir o menu lateral e a navbar
     includeHTML("container-sidebar", "sidebar.html");
     includeHTML("container-navbar", "navbar.html");
-
+    
 });
 
 function toggleMenu(element){
     // Alternar a visibilidade do menu em telas pequenas
-    document.getElementById("toggleMenu").addEventListener("click", function () {
-        document.getElementById("sidebar").classList.toggle("show");
-    });
+    document.getElementById("sidebar").classList.toggle("show");
 }
+
